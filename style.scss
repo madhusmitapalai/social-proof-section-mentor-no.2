@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: 700;
+    span {
+      font-size: 3.6rem;
+    }
+  }
+  /* background: url(./images/bg-pattern-bottom-desktop.svg); */
+}
+.home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/bg-pattern-top-desktop.svg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/bg-pattern-bottom-desktop.svg);
+}
+.card {
+  width: 23rem;
+  border: border 1px solid hsl(300, 43%, 22%);
+  height: 2.3rem;
+  ul {
+    list-style-type: none;
+    background-color: hsl(300, 24%, 96%);
+  }
+  li {
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    span {
+      color: hsl(300, 43%, 22%);
+      font-weight: normal;
+      font-size: 0.6rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  img {
+    max-width: 0.8rem;
+    display: inline-block;
+  }
+}
+
+.two {
+  margin-left: 2.5rem;
+  margin-top: 0.9rem;
+}
+.three {
+  margin-left: 4.5rem;
+  margin-top: 1rem;
+}
+/*cards*/
+.div-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: -3rem;
+    overflow: hidden;
+  .cards {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    img {
+      max-width: 3rem;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .texts {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    .body {
+      font-size: 1rem;
+      font-weight: 500;
+      padding-top: 1rem;
+    }
+    .small {
+      padding-left: 1rem;
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+      span {
+        color: hsl(333, 80%, 67%);
+      }
+    }
+  }
+  .c-2 {
+    margin-top: 1rem;
+  }
+  .c-3 {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 445px) {
+  .cards {
+    margin-top: 0.7rem;
+  }
+  .div-2{
+      margin-top: 1;
+  }
+}
