@@ -11,7 +11,9 @@
 .home {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   position: relative;
+  padding: 1rem;
   /* background: url(./images/bg-pattern-bottom-desktop.svg); */
 }
 
@@ -47,15 +49,22 @@
   background: url(./images/bg-pattern-bottom-desktop.svg);
 }
 
+.col-first {
+  color: #6d6c6c;
+  font-weight: 400;
+}
+
 .card {
   width: 23rem;
+  overflow: hidden;
   border: border 1px solid #502050;
-  height: 2.3rem;
+  height: 2.5rem;
+  background-color: #e9e2e9;
+  color: #502050;
 }
 
 .card ul {
   list-style-type: none;
-  background-color: #f7f2f7;
 }
 
 .card li {
@@ -64,8 +73,7 @@
 }
 
 .card li span {
-  color: #502050;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 0.6rem;
   padding-left: 0.5rem;
 }
@@ -73,6 +81,16 @@
 .card img {
   max-width: 0.8rem;
   display: inline-block;
+}
+
+.card .d-flex {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .two {
@@ -89,7 +107,6 @@
 .div-2 {
   width: 100%;
   height: 100%;
-  margin-top: -3rem;
   overflow: hidden;
 }
 
@@ -118,17 +135,24 @@
 }
 
 .div-2 .cards .body {
-  font-size: 1rem;
-  font-weight: 500;
-  padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 1.5rem 1.4rem;
 }
 
 .div-2 .cards .small {
   padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .div-2 .cards .small p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -137,19 +161,29 @@
 }
 
 .div-2 .c-2 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .div-2 .c-3 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 @media (max-width: 445px) {
+  .card {
+    width: 20rem;
+    height: 3.5rem;
+  }
   .cards {
     margin-top: 0.7rem;
   }
   .div-2 {
     margin-top: 1;
+  }
+  .two {
+    margin-left: 0.5rem;
+  }
+  .three {
+    margin-left: 0.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
